@@ -6,7 +6,7 @@ SpongeJS-Web is a web server for [SpongeJS](https://github.com/djxy/SpongeJS).
 
 ## How to use SpongeJS-Web
 1. Download [SpongeJS](https://github.com/djxy/SpongeJS) and start your Sponge server with it. Then close the server.
-2. Goto `config/spongejs` and clone SpongeJS-Web `git clone https://github.com/djxy/SpongeJS-Web`
+2. `cd config/spongejs`
 3. Edit `spongejs.conf` with this.
 ```javascript
 startingFile="SpongeJS-Web/bin/www"
@@ -15,3 +15,6 @@ scripts={
     shutdownPort="server.close();"
 }
 ```
+4. Clone SpongeJS-Web `git clone https://github.com/djxy/SpongeJS-Web`
+5. `cd SpongeJS-Web`
+6. `npm install`
