@@ -1,9 +1,6 @@
 # SpongeJS-Web
 SpongeJS-Web is a web server for [SpongeJS](https://github.com/djxy/SpongeJS).
 
-## Prerequisites
-- Sponge API 5.X
-
 ## How to use SpongeJS-Web
 1. Download [SpongeJS](https://github.com/djxy/SpongeJS) and start your Sponge server with it. Then close the server.
 2. `cd config/spongejs`
