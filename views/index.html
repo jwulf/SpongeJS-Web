@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            html, body, body > div, body > div > div {
+                height: 100%;
+            }
+
+            #players {
+                height: 100%;
+                border-right: solid rgb(221, 221, 221) 1px;
+            }
+
+            #modules {
+                padding-top: 15px;
+                overflow-y: scroll;
+                height: 100%;
+            }
+        </style>
         <meta charset="UTF-8">
         <title>SpongeJS</title>
     </head>
     <body>
-        <form action="/sendMoney" method="post">
-            User: <input type="number " name="user"><br>
-            Amount: <input type="number " name="amount"><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="players" class="col-md-3">
+                </div>
+                <div id="modules" class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Economy</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Command</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
