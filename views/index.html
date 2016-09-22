@@ -2,20 +2,33 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style>
             html, body, body > div, body > div > div {
                 height: 100%;
             }
 
             #players {
+                padding-top: 15px;
                 height: 100%;
                 border-right: solid rgb(221, 221, 221) 1px;
+                overflow-y: scroll;
             }
 
             #modules {
-                padding-top: 15px;
                 overflow-y: scroll;
                 height: 100%;
+            }
+
+            #spongeJSTitle{
+                margin: 0;
+                padding: 0;
+            }
+
+            .minecraftPlayerHead {
+                width: 64px;
+                height: 64px;
             }
         </style>
         <meta charset="UTF-8">
@@ -25,28 +38,66 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="players" class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 id="spongeJSTitle">SpongeJS</h1>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="minecraftPlayerHead" src="http://avatar.yourminecraftservers.com/avatar/source/minecraft/background/trnsp/bgParams/%23111111,%23cccccc/notFound/steve/figure/face/figureSize/100/borderSize/1/borderColor/%23000000/canvasSize/256/djxy.png?download">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Djxy</strong>
+                                    <br>
+                                    <span>World</span>
+                                    <br>
+                                    <span>(12, 90, -123)</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
                 <div id="modules" class="col-md-9">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Economy</h3>
+                            <div class="page-header">
+                                <h1>Economy</h1>
+                            </div>
+                            <h3>Give money</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    </div>
                                 </div>
-                                <div class="panel-body">
-                                    Panel content
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Dropdown
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Action</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-success">Give money</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Command</h3>
-                                </div>
-                                <div class="panel-body">
-                                    Panel content
-                                </div>
-                            </div>
+                            <hr>
                         </div>
                     </div>
                 </div>
