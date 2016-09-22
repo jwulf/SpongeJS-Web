@@ -1,0 +1,58 @@
+html, body, body > div {
+    height: 100%;
+}
+
+#navbar{
+    background-color: #343434;
+    height: 70px;
+}
+
+#navbar > span {
+    margin-left: 15px;
+}
+
+#navbar span{
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+    color: white;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 48px;
+}
+
+#navbar span.js{
+    color: #339933;
+}
+
+#main-container {
+    height: calc(100% - 70px);
+}
+
+#left-container {
+    padding-top: 15px;
+    height: 100%;
+    border-right: solid rgb(221, 221, 221) 1px;
+}
+
+#left-container > div, #left-container > div > div {
+    height: 100%;
+}
+
+#players-connected {
+    overflow-y: auto;
+    min-height: 300px;
+}
+
+#playersConnected > div {
+    margin-top: 8px;
+}
+
+.panel {
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#right-container-content {
+    padding-top: 15px;
+}
