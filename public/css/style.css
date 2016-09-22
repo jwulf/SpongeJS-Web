@@ -6,12 +6,12 @@ html, body, body > div {
     height: 100%;
 }
 
-#center-container > div, #center-container > div > div, #center-container > div > div > div, #center-container > div > div > div {
-    height: 100%;
+.panel, .btn, .dropdown-menu {
+    border-radius: 0px;
 }
 
 #navbar{
-    background-color: #343434;
+    background-color: #333;
     height: 70px;
 }
 
@@ -38,17 +38,15 @@ html, body, body > div {
 
 #main-container > div {
     height: 100%;
-    padding-top: 15px;
+    padding: 15px 15px;
 }
 
 .container-fluid {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 body > div{
-    background-image: url("../image/background-image.jpg");
-    background-size: cover;
     height: 100%;
 }
 
@@ -57,7 +55,7 @@ body > div{
 }
 
 #players-connected-panel {
-    height: 50%;
+    height: 100%;
 }
 
 #players-connected-body {
@@ -71,8 +69,6 @@ body > div{
 }
 
 .panel {
-    border: solid rgb(221, 221, 221) 1px;
-    border-radius: 0px;
     box-shadow: none;
 }
 
@@ -87,4 +83,8 @@ body > div{
 #login-panel-players-connected {
     height: 100%;
     overflow-y: auto;
+}
+
+#login-body button {
+    margin-top: 15px;
 }
