@@ -2,6 +2,14 @@ html, body, body > div {
     height: 100%;
 }
 
+#left-container > div, #left-container > div > div {
+    height: 100%;
+}
+
+#center-container > div, #center-container > div > div, #center-container > div > div > div, #center-container > div > div > div {
+    height: 100%;
+}
+
 #navbar{
     background-color: #343434;
     height: 70px;
@@ -28,23 +36,38 @@ html, body, body > div {
     height: calc(100% - 70px);
 }
 
-#left-container {
+#main-container > div {
+    height: 100%;
     padding-top: 15px;
-    height: 100%;
-    border-right: solid rgb(221, 221, 221) 1px;
 }
 
-#left-container > div, #left-container > div > div {
+.container-fluid {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+body > div{
+    background-image: url("../image/background-image.jpg");
+    background-size: cover;
     height: 100%;
 }
 
-#players-connected {
+#left-container {
+    height: 100%;
+}
+
+#players-connected-panel {
+    height: 50%;
+}
+
+#players-connected-body {
+    height: calc(100% - 41px);
+    max-height: 100%;
     overflow-y: auto;
-    min-height: 300px;
 }
 
-#playersConnected > div {
-    margin-top: 8px;
+.playerHead {
+    margin-bottom: 15px;
 }
 
 .panel {
@@ -55,4 +78,13 @@ html, body, body > div {
 
 #right-container-content {
     padding-top: 15px;
+}
+
+#login-panel {
+    height: 50%;
+}
+
+#login-panel-players-connected {
+    height: 100%;
+    overflow-y: auto;
 }

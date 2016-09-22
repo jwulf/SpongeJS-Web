@@ -3,37 +3,14 @@ var playersConnected = {};
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
-    updateRightContainer();
-    /*setInterval(function () {
+    setInterval(function () {
         $.ajax({
             url: "/api/players/connected",
             success: updatePlayersConnected,
             dataType: "json"
         })
-    }, 500);*/
+    }, 500);
 });
-
-function updateRightContainer() {
-    $.ajax({
-        url: "/api/session/status",
-        success: function (data) {
-            if(data.status == "connected")
-                updateRightContainerHtml("connected");
-            else
-                updateRightContainerHtml("login");
-        },
-        dataType: "json"
-    });
-}
-
-function updateRightContainerHtml(page){
-    $.ajax({
-        url: "/html/"+page+".html",
-        success: function (data) {
-            $("#right-container-content").append($(data));
-        }
-    });
-}
 
 function updatePlayersConnected(players){
     for(var x in players){
@@ -60,7 +37,7 @@ function updatePlayersConnected(players){
         }
         else{
             if($("#player-connected-"+uuid).length == 0)
-                $("#players-connected").append($('<div id="'+"player-connected-"+uuid+'" class="col-md-3"> <img class="img-responsive" src="http://avatar.yourminecraftservers.com/avatar/source/minecraft/background/trnsp/bgParams/%23111111,%23cccccc/notFound/steve/figure/face/figureSize/100/borderSize/1/borderColor/%23000000/canvasSize/256/' + player.name + '.png?download" data-toggle="tooltip" data-placement="right" title="' + player.name + '"</div>'));
+                $("#players-connected").append($('<div id="'+"player-connected-"+uuid+'" class="col-md-3"> <img class="img-responsive playerHead" src="http://avatar.yourminecraftservers.com/avatar/source/minecraft/background/trnsp/bgParams/%23111111,%23cccccc/notFound/steve/figure/face/figureSize/100/borderSize/1/borderColor/%23000000/canvasSize/256/' + player.name + '.png?download" data-toggle="tooltip" data-placement="bottom" title="' + player.name + '"></div>'));
 
             player.updated = false;
         }
