@@ -85,6 +85,6 @@ body > div{
     overflow-y: auto;
 }
 
-#login-body button {
+#login-body button, #login-body input {
     margin-top: 15px;
 }

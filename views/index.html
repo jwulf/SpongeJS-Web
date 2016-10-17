@@ -45,24 +45,24 @@
                         </div>
                         <div id="login-body" class="panel-body">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <img class="col-md-offset-3 col-md-3 img-responsive" src="http://avatar.yourminecraftservers.com/avatar/source/minecraft/background/trnsp/bgParams/%23111111,%23cccccc/notFound/steve/figure/face/figureSize/100/borderSize/1/borderColor/%23000000/canvasSize/256/djxy.png?download">
-                                    <div class="col-md-3 dropdown">
+                                <div class="col-md-offset-4">
+                                    <div class="dropdown">
                                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                            Dropdown
+                                            Send login code to...
                                             <span class="caret"></span>
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
+                                        <ul id="login-players-connected" class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="col-md-offset-3 col-md-6 btn btn-success">Send code in-game</button>                                </div>
+                                    <button id="button-send-login-code" type="submit" class="col-md-offset-2 col-md-4 btn btn-success">Connect</button>
+                                    <div class="col-md-4 input-group">
+                                        <input id="input-send-login-code" type="number" class="form-control" placeholder="Code received">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
